@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="koverjus-Web.config Connection String" description="koverjus Connection String used in web.config by the application to access the database." defaultValue="server=C1BF69SECUAUTH;database=KOVERJUS;uid=sa;password=sa123456;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\GMACBootstrapwithSSI\\Single\ Sign\ ON\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='koverjus']/@connectionString" />
+  </parameter>
+</parameters>

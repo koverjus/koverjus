@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMAC</title>
+    @Styles.Render("~/Content")
+    @Scripts.Render("~/Scripts")
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <a class="navbar-brand" href="~/Home/Index">
+            Graduate<br />
+            Management<br />
+            Admission<br />
+            Council&trade;
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="~/Home/Index">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="~/Home/About">About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="~/Home/Contact">Contact us</a></li>
+                <li class="nav-item"><a class="nav-link" href="~/Home/News">News Center</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bg-primary" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown04">Careers at GMAC<span class="caret"></span></a>
+                    <ul class="dropdown-menu bg-primary" aria-labelledby="dropdown04">
+                        <li><a class="dropdown-item" href="">IT</a></li>
+                        <li><a class="dropdown-item" href="">BPO</a></li>
+                        <li><a class="dropdown-item" href="">HR</a></li>
+                        <li><a class="dropdown-item" href="">Recruitment</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="~/Check/Signin">SignIn</a></li>
+                <li class="nav-item"><a class="nav-link" href="~/Check/Signout">SignOut</a></li>
+            </ul>
+
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </div>
+    </nav>
+    <img src="~/Images/GMAC.JPG" />
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - R Systems International</p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
